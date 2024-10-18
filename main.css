@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #CCC;
+    padding: 10px;
+}
+
+h2, h3{
+    padding: 10px;
+    height: 50px;
+    font-size: 20px;
+
+    color: #111;
+}
+.frut{
+    max-width: 500px;
+    padding: 10px;
+    background: #e87070;
+}
+
+.frut li{
+    margin: 10px;
+    padding: 10px;
+    background:#ed4d4d;
+    list-style-position: inside;/*управляет будет ли маркер появляется внутри пунктов списка или вне их перед началом каждого элемента*/
+   /* display : inline-block ; в 1 линию */
+}
+
+.frut li a{
+    margin: 10px;
+    padding: 10px; 
+    background: #c12c2c;
+    text-decoration: none;
+}
+
+.spis{
+    max-width: 300px;
+    padding: 10px;
+    background: #9ea2eb;
+    border:#111 solid 5px;
+    list-style-image: url("icons/unchecked_16.png");
+}
+
+.spis li{
+    padding: 10px;
+    list-style-position: inside;/*управляет будет ли маркер появляется внутри пунктов списка или вне их перед началом каждого элемента*/
+    background: #8488e4;
+    transition: list-style-image 0.3s;
+}
+.spis li a{
+    text-decoration: none;
+}
+
+.spis li:nth-child(odd){
+    background-color: #7362d5;
+}
+
+.spis li:hover{
+    list-style-image: url("icons/checked_16.png");
+    background-color: #ccc;
+}
+
+.spis li a:visited{
+    list-style-image: url("icons/checked_16.png");
+    background-color: #1f1d1d;
+}
