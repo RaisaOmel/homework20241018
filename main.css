@@ -78,4 +78,6 @@ h2, h3{
     color: #353434;
     text-decoration: line-through;
 }
-
+.fa-xmark{
+    text-indent: 10px;
+}
