@@ -22,7 +22,6 @@ h2, h3{
     max-width: 500px;
     padding: 10px;
     background: #e87070;
-    border:#111 solid 5px;
 }
 
 .frut li{
@@ -56,18 +55,27 @@ h2, h3{
 }
 .spis li a{
     text-decoration: none;
+    background-color: none;
 }
 
 .spis li:nth-child(odd){
-    background-color: #7362d5;
+    background: #7362d5;
+}
+.spis li a:link{
+    /* background: #5b80af; */
 }
 
 .spis li:hover{
     list-style-image: url("icons/checked_16.png");
-    background-color: #ccc;
+    background: #ccc;
+}
+.spis li a:active{
+    /* background: #5b80af; */
 }
 
-.spis li a:visited{
+.spis li:nth-child(3){
     list-style-image: url("icons/checked_16.png");
-    background-color: #1f1d1d;
+    color: #353434;
+    text-decoration: line-through;
 }
+
